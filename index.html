@@ -14,33 +14,57 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div>
-          <a href="index.html"
-            ><img
-              src="images/GameHubLogout.png"
-              alt="Game Hub logo"
-              class="fp_logo"
-          /></a>
-        </div>
-        <ul>
-          <li><a href="index.html" class="active">HOME</a></li>
+      <label class="hamburger-label" for="hamburger-menu"
+        ><div></div>
+        <div></div>
+        <div></div
+      ></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <div>
+        <a href="index.html"
+          ><img
+            src="images/GameHubLogout.png"
+            alt="Game Hub logo"
+            class="fp_logo"
+        /></a>
+      </div>
+      <nav class="topmenu">
+        <ul class="menu_buttons">
+          <li class="active"><a href="index.html">HOME</a></li>
           <li><a href="gameslist.html">GAMES</a></li>
           <li><a href="news.html">NEWS</a></li>
           <li><a href="contact.html">CONTACT</a></li>
         </ul>
       </nav>
+      <div class="user_menu">
+        <a href="checkout.html" class="menu_button small cart">
+          <img
+            src="images/add_to_cart.png"
+            alt="image of shopping cart"
+            class="cart_img"
+          />CART</a
+        >
+        <div class="account">
+          <img
+            src="images/profile_img.png"
+            alt="profile picture"
+            class="account_img"
+          />
+          <a href="account.html" class="menu_button small">ACCOUNT</a>
+          <a href="login.html" class="menu_button small">SIGN IN/UP</a>
+        </div>
+      </div>
     </header>
+    <div class="background_banner"></div>
     <main>
-      <h1>Welcome!</h1>
-      <section>
+      <section class="campaign_ad">
         <div>
-          <h2>Retro Week</h2>
+          <h1>Retro Week</h1>
           <div>
             <img
               src="images/homepage_rw_copy.jpg"
               alt="image of retro consoles"
-              class="article_frontpage_img"
+              class="campaign_ad_img"
             />
           </div>
           <p>
@@ -50,37 +74,37 @@
         </div>
       </section>
       <section class="featured_games">
-        <div class="featured_games_div">
-          <img src="" alt="" />
+        <div class="featured_games_container">
+          <img src="images/productimages/GameHub_Super.jpg" alt="" />
           <h3>Game Gamerson</h3>
           <p>$29.99</p>
           <a href="producct/productpage.html" class="cta cta-small">View</a>
         </div>
-        <div class="featured_games_div">
+        <div class="featured_games_container">
           <img src="images/productimages/GameHub_Assassin.jpg" alt="" />
           <h3>Game Gamerson</h3>
           <p>$29.99</p>
           <a href="producct/productpage.html" class="cta cta-small">View</a>
         </div>
-        <div class="featured_games_div">
+        <div class="featured_games_container">
           <img src="images/productimages/GameHub_Black.jpg" alt="" />
           <h3>Game Gamerson</h3>
           <p>$29.99</p>
           <a href="producct/productpage.html" class="cta cta-small">View</a>
         </div>
-        <div class="featured_games_div">
+        <div class="featured_games_container">
           <img src="images/productimages/GameHub_Boxer.jpg" alt="" />
           <h3>Game Gamerson</h3>
           <p>$29.99</p>
           <a href="producct/productpage.html" class="cta cta-small">View</a>
         </div>
-        <div class="featured_games_div">
+        <div class="featured_games_container">
           <img src="images/productimages/GameHub_Cyberpunk.jpg" alt="" />
           <h3>Game Gamerson</h3>
           <p>$29.99</p>
           <a href="producct/productpage.html" class="cta cta-small">View</a>
         </div>
-        <div class="featured_games_div">
+        <div class="featured_games_container">
           <img src="images/productimages/GameHub_ForgeLegend.jpg" alt="" />
           <h3>Game Gamerson</h3>
           <p>$29.99</p>
