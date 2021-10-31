@@ -62,7 +62,7 @@ header .fp_logo {
 
 .menu_buttons .active {
   font-weight: bold;
-  margin-bottom: -10;
+  margin-bottom: -10px;
 }
 
 .user_menu {
