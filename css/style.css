@@ -1,75 +1,11 @@
 @font-face {
   font-family: "Montserrat", sans-serif;
-  src: url(../assets/Montserrat/Montserrat-Black.ttf);
+  src: url(../assets/Montserrat/Montserrat-Regular.ttf);
 }
 @font-face {
   font-family: "Open sans", sans-serif;
   src: url(../assets/OpenSans/OpenSans-Regular.ttf);
 }
-/*
-body {
-  font-family: ;
-  background-color: #05aff2;
-  min-height: 100vh;
-  margin: 10px;
-  width: 100%;
-  display: grid;
-}
-
-header {
-  background-color: #eaf205;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  text-decoration: none;
-}
-
-.welcome {
-  background-image: url(images/homepage_bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: top;
-  min-height: 70vh;
-}
-
-.fp_logo {
-  max-width: 100px;
-  height: auto;
-}
-
-
-
-.article_frontpage_img {
-  display: flex;
-  max-width: 1000px;
-}
-
-.featured_games {
-  display: block;
-  margin: 10px;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.featured_games_div {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-footer {
-  background-color: black;
-  color: white;
-}
-*/
 
 body {
   background-color: #e1f0f9;
@@ -85,7 +21,7 @@ header {
   position: relative;
 }
 
-/* navigation and logo */
+/*nav & logo*/
 
 .hamburger-label {
   display: none;
@@ -126,7 +62,7 @@ header .fp_logo {
 
 .menu_buttons .active {
   font-weight: bold;
-  margin-bottom: -10px;
+  margin-bottom: -10;
 }
 
 .user_menu {
@@ -151,6 +87,7 @@ header .fp_logo {
   font-size: 13px;
   width: 80px;
 }
+
 .menu_button.cart {
   display: flex;
   align-items: center;
@@ -161,10 +98,9 @@ header .fp_logo {
   max-width: 30px;
 }
 
-/* main content */
+/* main content*/
 
 .background_banner {
-  margin-top: px;
   background-image: url(../images/homepage_bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -194,18 +130,24 @@ main {
 
 .featured_games_container {
   background-color: white;
+  margin: ;
 }
+
 .featured_games_container a,
-.featured_games_container h3,
-.featured_games_container p {
-  padding: 5px;
+h3,
+p {
   display: block;
+  padding: 5px;
   margin: 0;
+}
+
+.featured_games_container .productpage_link_img {
+  padding: 0;
 }
 
 footer {
   background-color: black;
-  color: white;
+  color: #e1f0f9;
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -217,17 +159,21 @@ footer {
   .menu_button.cart {
     display: none;
   }
+
   header {
     justify-content: space-between;
     max-width: 100%;
   }
+
   header .fp_logo {
     margin-bottom: 0;
     width: 39vw;
   }
+
   .account_img {
     width: 10vw;
   }
+
   .hamburger-label {
     background-color: #0697f2;
     display: block;
@@ -235,6 +181,7 @@ footer {
     padding: 15px;
     border-radius: 50%;
   }
+
   .hamburger-label div {
     width: 40px;
     height: 5px;
@@ -244,7 +191,6 @@ footer {
 
   #hamburger-menu:checked ~ nav {
     display: block;
-
     position: absolute;
     background-color: #fff56d;
     bottom: -190px;
@@ -258,13 +204,16 @@ footer {
   #hamburger-menu:checked ~ nav .menu_buttons li {
     margin: 5px;
   }
+
   #hamburger-menu:checked ~ nav .menu_buttons a {
     min-width: 100px;
     font-size: 20px;
   }
+
   main {
     margin: 10px;
   }
+
   .featured_games {
     grid-template-columns: 1fr 1fr;
   }
