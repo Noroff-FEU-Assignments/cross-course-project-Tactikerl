@@ -14,6 +14,10 @@
     <link href="css/media.css" rel="stylesheet" />
   </head>
   <body>
+    <script
+      src="https://kit.fontawesome.com/4946d189d8.js"
+      crossorigin="anonymous"
+    ></script>
     <header>
       <label class="hamburger-label" for="hamburger-menu">
         <span class="hamburger-label-line"></span>
@@ -21,7 +25,7 @@
         <span class="hamburger-label-line"></span>
       </label>
       <input type="checkbox" id="hamburger-menu" />
-      <div>
+      <div class="logo_container">
         <a href="index.html">
           <img
             src="images/GameHubLogout.png"
@@ -30,6 +34,10 @@
           />
         </a>
       </div>
+      <form class="searchbar">
+        <input type="text" placeholder="Search.." name="search" />
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
       <nav class="topmenu">
         <ul class="menu_buttons">
           <li><a href="index.html">HOME</a></li>
@@ -38,6 +46,7 @@
           <li class="active"><a href="contact.html">CONTACT</a></li>
         </ul>
       </nav>
+
       <div class="user_menu">
         <a href="checkout.html" class="menu_button small cart">
           <img
@@ -59,7 +68,28 @@
       </div>
     </header>
     <div class="background_banner"></div>
-    <main></main>
+    <main>
+      <div class="text_container">
+        <h1>CONTACT US</h1>
+        <p>
+          Do you have any questions about buying and selling games? You are
+          welcome to contact us at
+          <a href="">buyandsell@gamehub.com</a>
+        </p>
+        <p>
+          If you want to contact our award winning customer service you can do
+          so via this email
+          <a href="">customerservice@gamehub.com</a>
+        </p>
+        <h2>Do you want to work with us?</h2>
+        <p>
+          We are always looking to expand our team with great people who love
+          games and share our belief in a circular economy. Send your
+          application with an introductory letter and CV to
+          <a href="">employment@gamehub.com</a>
+        </p>
+      </div>
+    </main>
     <footer>Copyright &copy;</footer>
   </body>
 </html>

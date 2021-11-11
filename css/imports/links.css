@@ -1,9 +1,5 @@
 /*nav & logo*/
 
-.hamburger-label {
-  display: ;
-}
-
 #hamburger-menu {
   display: none;
 }
@@ -25,7 +21,8 @@ header .fp_logo {
 }
 
 .menu_buttons a,
-.menu_button {
+.menu_button,
+.cta.cta-small {
   background-color: #81d7f8;
   color: #1b203d;
   border-radius: 25px;
@@ -41,13 +38,6 @@ header .fp_logo {
 .menu_buttons .active {
   font-weight: bold;
   margin-bottom: -10px;
-}
-
-.user_menu {
-  display: flex;
-  align-items: end;
-  gap: 5px;
-  padding: 5px;
 }
 
 .account {

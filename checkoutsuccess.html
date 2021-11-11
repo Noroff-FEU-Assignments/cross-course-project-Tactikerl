@@ -10,8 +10,13 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/checkoutsuccess.css"
   </head>
   <body>
+    <script
+      src="https://kit.fontawesome.com/4946d189d8.js"
+      crossorigin="anonymous"
+    ></script>
     <header>
       <label class="hamburger-label" for="hamburger-menu">
         <span class="hamburger-label-line"></span>
@@ -19,7 +24,7 @@
         <span class="hamburger-label-line"></span>
       </label>
       <input type="checkbox" id="hamburger-menu" />
-      <div>
+      <div class="logo_container">
         <a href="index.html">
           <img
             src="images/GameHubLogout.png"
@@ -28,9 +33,13 @@
           />
         </a>
       </div>
+      <form class="searchbar">
+        <input type="text" placeholder="Search.." name="search" />
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
       <nav class="topmenu">
         <ul class="menu_buttons">
-          <li class="active"><a href="index.html">HOME</a></li>
+          <li><a href="index.html">HOME</a></li>
           <li><a href="gameslist.html">GAMES</a></li>
           <li><a href="news.html">NEWS</a></li>
           <li><a href="contact.html">CONTACT</a></li>
@@ -57,7 +66,18 @@
       </div>
     </header>
     <div class="background_banner"></div>
-    <main></main>
+    <main>
+      <div class="text_container">
+        <h1>Thank You!</h1>
+        <p>
+          Thank you for your order! Our team of highly skilled delivery
+          dinosaurs will now start packing your order. if you have any questions
+          about your order you can check the progress through your order
+          overview or you can contact our customer service at
+          <a href="">customerservice@gamehub.com</a>
+        </p>
+      </div>
+    </main>
     <footer>Copyright &copy;</footer>
   </body>
 </html>

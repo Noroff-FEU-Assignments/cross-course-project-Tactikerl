@@ -8,6 +8,20 @@
   header {
     justify-content: space-between;
     max-width: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "hamburger-menu logo user-menu"
+      "hamburger-menu searchbar user-menu";
+  }
+
+  .hamburger_container {
+    grid-area: hamburger-menu;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .user_menu {
+    align-items: center;
   }
 
   header .fp_logo {
@@ -62,5 +76,13 @@
 
   .featured_games {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .product_game {
+    grid-template-columns: 1fr;
+  }
+
+  .product_game img {
+    max-width: 50%;
   }
 }

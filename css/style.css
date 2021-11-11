@@ -12,15 +12,24 @@
 
 body {
   background-color: #e1f0f9;
+  min-height: 100vh;
   margin: 0;
+  display: flex;
+  flex-direction: column;
   font-family: "Montserrat";
+}
+
+.searchbar {
 }
 
 header {
   background-color: #fff56d;
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "logo searchbar user-menu"
+    "logo navbar user-menu";
   position: relative;
 }
 
@@ -39,6 +48,41 @@ header .fp_logo {
   width: 25vw;
   max-width: 300px;
   margin-bottom: -30px;
+}
+
+.logo_container {
+  grid-area: logo;
+  align-self: end;
+  justify-self: center;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  grid-area: searchbar;
+  justify-self: center;
+  height: 70px;
+}
+
+.searchbar input,
+.searchbar button {
+  height: 50%;
+  padding
+}
+
+.topmenu {
+  grid-area: navbar;
+  align-self: end;
+  justify-self: center;
+}
+
+.user_menu {
+  grid-area: user-menu;
+  display: flex;
+  align-items: end;
+  gap: 5px;
+  padding: 5px;
+  justify-self: end;
 }
 
 .topmenu .menu_buttons {
@@ -67,13 +111,6 @@ header .fp_logo {
 .menu_buttons .active {
   font-weight: bold;
   margin-bottom: -10px;
-}
-
-.user_menu {
-  display: flex;
-  align-items: end;
-  gap: 5px;
-  padding: 5px;
 }
 
 .account {
@@ -114,7 +151,7 @@ header .fp_logo {
 }
 
 main {
-  max-width: 800px;
+  max-width: 100vh;
   margin: auto;
 }
 
@@ -130,6 +167,10 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 25px;
+  margin: 10px;
+  
+  border-bottom: 1px black solid;
+
 }
 
 .featured_games img {
@@ -138,7 +179,10 @@ main {
 
 .featured_games_container {
   background-color: white;
-  margin: ;
+  padding: 10px;
+  border: 1px black solid;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px 1px #000000;
 }
 
 .featured_games_container a,
@@ -149,8 +193,44 @@ p {
   margin: 0;
 }
 
+.featured_games_container .button_container {
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .featured_games_container .productpage_link_img {
   padding: 0;
+}
+
+.checkout_container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  border: 1px black solid;
+  border-radius: 10px;  
+}
+
+.checkout_container h1, h3 {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px black solid;
+}
+
+.checkout_container .button_container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.payment_information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 footer {

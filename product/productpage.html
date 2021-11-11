@@ -9,11 +9,15 @@
       content="The hub for all things that are gaming."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link href="../css/media.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />    
     <link href="../css/productpage.css" rel="stylesheet" />
+    <link href="../css/media.css" rel="stylesheet" />
   </head>
   <body>
+    <script
+      src="https://kit.fontawesome.com/4946d189d8.js"
+      crossorigin="anonymous"
+    ></script>
     <header>
       <label class="hamburger-label" for="hamburger-menu">
         <span class="hamburger-label-line"></span>
@@ -21,8 +25,8 @@
         <span class="hamburger-label-line"></span>
       </label>
       <input type="checkbox" id="hamburger-menu" />
-      <div>
-        <a href="index.html">
+      <div class="logo_container">
+        <a href="../index.html">
           <img
             src="../images/GameHubLogout.png"
             alt="Game Hub logo"
@@ -30,6 +34,10 @@
           />
         </a>
       </div>
+      <form class="searchbar">
+        <input type="text" placeholder="Search.." name="search" />
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
       <nav class="topmenu">
         <ul class="menu_buttons">
           <li><a href="../index.html">HOME</a></li>
@@ -60,18 +68,30 @@
     </header>
     <div class="background_banner"></div>
     <main>
-      <section class="featured_games">
-        <div class="featured_games_container">
-          <a href="product/productpage.html" class="productpage_link_img">
+      <section class="product_game">
+        <div class="product_game_container">          
             <img
               src="../images/productimages/GameHub_Super.jpg"
               alt="Cover art for Super Duper"
+              class="product_images"
             />
           </a>
           <h2>Super Duper</h2>
           <p>$29.99</p>
-          <a href="product/productpage.html" class="cta cta-small">View</a>
           <a href="cart.html" class="cta cta-small">Add to Cart</a>
+        </div>
+        <div>
+          <h3>Super Duper</h3>
+          <p>
+            Take control of Super Duper and stop the notorious Nex Naughtor from
+            taking over the High School prom
+          </p>
+        </div>
+        <div class="product_images">
+          <img src="../images/productimages/GameHub_Super.jpg" alt="" />
+          <img src="../images/productimages/GameHub_Super.jpg" alt="" />
+          <img src="../images/productimages/GameHub_Super.jpg" alt="" />
+          <img src="../images/productimages/GameHub_Super.jpg" alt="" />
         </div>
       </section>
     </main>

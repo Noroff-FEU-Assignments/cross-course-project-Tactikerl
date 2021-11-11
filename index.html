@@ -14,14 +14,20 @@
     <link href="css/index.css" rel="stylesheet" />
   </head>
   <body>
+    <script
+      src="https://kit.fontawesome.com/4946d189d8.js"
+      crossorigin="anonymous"
+    ></script>
     <header>
-      <label class="hamburger-label" for="hamburger-menu">
-        <span class="hamburger-label-line"></span>
-        <span class="hamburger-label-line"></span>
-        <span class="hamburger-label-line"></span>
-      </label>
+      <div class="hamburger_container">
+        <label class="hamburger-label" for="hamburger-menu">
+          <span class="hamburger-label-line"></span>
+          <span class="hamburger-label-line"></span>
+          <span class="hamburger-label-line"></span>
+        </label>
+      </div>
       <input type="checkbox" id="hamburger-menu" />
-      <div>
+      <div class="logo_container">
         <a href="index.html">
           <img
             src="images/GameHubLogout.png"
@@ -30,6 +36,10 @@
           />
         </a>
       </div>
+      <form class="searchbar">
+        <input type="text" placeholder="Search.." name="search" />
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
       <nav class="topmenu">
         <ul class="menu_buttons">
           <li class="active"><a href="index.html">HOME</a></li>
@@ -63,13 +73,13 @@
       <section class="campaign_ad">
         <div>
           <h1>Retro Week</h1>
-          <div>
-            <img
-              src="images/homepage_rw_copy.jpg"
-              alt="image of retro consoles"
-              class="campaign_ad_img"
-            />
-          </div>
+
+          <img
+            src="images/homepage_rw_copy.jpg"
+            alt="image of retro consoles"
+            class="campaign_ad_img"
+          />
+
           <p>
             Check out our selection of retro games
             <a href="gameslist.html">here!</a>
@@ -86,8 +96,10 @@
           </a>
           <h2>Super Duper</h2>
           <p>$29.99</p>
-          <a href="product/productpage.html" class="cta cta-small">View</a>
-          <a href="cart.html" class="cta cta-small">Add to Cart</a>
+          <div class="button_container">
+            <a href="product/productpage.html" class="cta cta-small">View</a>
+            <a href="cart.html" class="cta cta-small">Add to Cart</a>
+          </div>
         </div>
         <div class="featured_games_container">
           <a href="product/productpage.html" class="productpage_link_img">
@@ -98,8 +110,10 @@
           </a>
           <h2>Assassin</h2>
           <p>$29.99</p>
-          <a href="product/productpage.html" class="cta cta-small">View</a>
-          <a href="cart.html" class="cta cta-small">Add to Cart</a>
+          <div class="button_container">
+            <a href="product/productpage.html" class="cta cta-small">View</a>
+            <a href="cart.html" class="cta cta-small">Add to Cart</a>
+          </div>
         </div>
         <div class="featured_games_container">
           <a href="product/productpage.html" class="productpage_link_img">
@@ -110,8 +124,10 @@
           </a>
           <h2>Black</h2>
           <p>$29.99</p>
-          <a href="product/productpage.html" class="cta cta-small">View</a>
-          <a href="cart.html" class="cta cta-small">Add to Cart</a>
+          <div class="button_container">
+            <a href="product/productpage.html" class="cta cta-small">View</a>
+            <a href="cart.html" class="cta cta-small">Add to Cart</a>
+          </div>
         </div>
         <div class="featured_games_container">
           <a href="product/productpage.html" class="productpage_link_img">
@@ -122,8 +138,10 @@
           </a>
           <h2>Boxer</h2>
           <p>$29.99</p>
-          <a href="product/productpage.html" class="cta cta-small">View</a>
-          <a href="cart.html" class="cta cta-small">Add to Cart</a>
+          <div class="button_container">
+            <a href="product/productpage.html" class="cta cta-small">View</a>
+            <a href="cart.html" class="cta cta-small">Add to Cart</a>
+          </div>
         </div>
         <div class="featured_games_container">
           <a href="product/productpage.html" class="productpage_link_img">
@@ -134,8 +152,10 @@
           </a>
           <h2>Cyberpunk</h2>
           <p>$29.99</p>
-          <a href="product/productpage.html" class="cta cta-small">View</a>
-          <a href="cart.html" class="cta cta-small">Add to Cart</a>
+          <div class="button_container">
+            <a href="product/productpage.html" class="cta cta-small">View</a>
+            <a href="cart.html" class="cta cta-small">Add to Cart</a>
+          </div>
         </div>
         <div class="featured_games_container">
           <a href="product/productpage.html" class="productpage_link_img">
@@ -146,8 +166,10 @@
           </a>
           <h2>Forge Legend</h2>
           <p>$29.99</p>
-          <a href="product/productpage.html" class="cta cta-small">View</a>
-          <a href="cart.html" class="cta cta-small">Add to Cart</a>
+          <div class="button_container">
+            <a href="product/productpage.html" class="cta cta-small">View</a>
+            <a href="cart.html" class="cta cta-small">Add to Cart</a>
+          </div>
         </div>
       </section>
     </main>
