@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Game Hub</title>
+    <meta
+      name="description"
+      content="The hub for all things that are gaming."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
+  </head>
+  <body>
+    <script
+      src="https://kit.fontawesome.com/4946d189d8.js"
+      crossorigin="anonymous"
+    ></script>
+    <header>
+      <div class="hamburger_container">
+        <label class="hamburger-label" for="hamburger-menu">
+          <span class="hamburger-label-line"></span>
+          <span class="hamburger-label-line"></span>
+          <span class="hamburger-label-line"></span>
+        </label>
+      </div>
+      <input type="checkbox" id="hamburger-menu" />
+      <div class="logo_container">
+        <a href="../index.html">
+          <img
+            src="../images/GameHubLogout.png"
+            alt="Game Hub logo"
+            class="fp_logo"
+          />
+        </a>
+      </div>
+      <form class="searchbar">
+        <input type="text" placeholder="Search.." name="search" />
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
+      <nav class="topmenu">
+        <ul class="menu_buttons">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="gameslist.html">GAMES</a></li>
+
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="user_menu">
+        <a href="checkout.html" class="menu_button small cart">
+          <img
+            src="images/add_to_cart.png"
+            alt="image of shopping cart"
+            class="cart_img"
+          />
+          CART
+        </a>
+        <div class="account">
+          <a href="account.html" class="account_img_link">
+            <img
+              src="images/profile_img.png"
+              alt="profile picture"
+              class="account_img"
+            />
+          </a>
+          <a href="account.html" class="menu_button small">ACCOUNT</a>
+          <a href="login.html" class="menu_button small">SIGN IN/UP</a>
+        </div>
+      </div>
+    </header>
+    <div class="background_banner"></div>
+    <main>
+      <div class="checkout_container">
+        <h1>CHECKOUT</h1>
+        <div class="featured_games">
+          <a href="product/productpage.html" class="productpage_link_img">
+            <img
+              src="images/productimages/GameHub_Super.jpg"
+              alt="Cover art for Super Duper game"
+            />
+          </a>
+          <h2>Super Duper</h2>
+          <p>$29.99</p>
+        </div>
+        <div class="featured_games">
+          <a href="product/productpage.html" class="productpage_link_img">
+            <img
+              src="images/productimages/GameHub_Assassin.jpg"
+              alt="Cover art for Assassin game"
+            />
+          </a>
+          <h2>Assassin</h2>
+          <p>$29.99</p>
+        </div>
+        <h3 class="checkout_total">Total: $59.98</h3>
+
+        <h3>Payment Information</h3>
+        <form class="payment_information">
+          <label for="fname">First name</label>
+          <input type="text" id="fname" name="fname" required />
+          <label for="lname">Last name</label>
+          <input type="text" id="lname" name="lname" required />
+          <label for="address1">Address</label>
+          <input type="text" id="address1" name="address1" required />
+          <label for="address2">Address</label>
+          <input type="text" id="address2" name="address2" />
+          <label for="zipcode">ZIP code</label>
+          <input type="text" id="zipcode" name="zipcode" required />
+          <label for="email">Email Address</label>
+          <input type="text" id="email" name="email" required />
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" required />
+          <label for="cardnumber">Card Number</label>
+          <input type="text" id="cardnumber" name="cardnumber" required />
+          <label for="cvc">CVC</label>
+          <input type="text" id="cvc" name="cvc" required />
+        </form>
+        <div class="button_container">
+          <a href="index.html" class="menu_button small">Cancel</a>
+          <a href="checkoutsuccess.html" class="menu_button small">Confirm</a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      Copyright &copy;
+      <img src="images/FB.png" />
+      <img src="images/YT.png" />
+      <img src="images/Twit.png" />
+      <img src="images/Inst.png" />
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+.text_container,
+.text_container p {
+  background-color: white;
+
+  text-align: left;
+}
+
+.text_container {
+  padding: 10px;
+  border-radius: 25px;
+}
+
+main {
+  margin-top: 100px;
+}

@@ -1,0 +1,6 @@
+.checkout_total {
+  text-decoration: underline;
+  display: flex;
+  padding: 10px;
+  justify-content: flex-start;
+}

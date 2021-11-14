@@ -1,0 +1,131 @@
+@media (max-width: 910px) {
+  .topmenu,
+  .user_menu a,
+  .menu_button.cart {
+    display: none;
+  }
+
+  .account .account_img_link {
+    display: block;
+  }
+
+  .user_menu .menu_button.small.cart {
+    display: flex;
+    width: auto;
+  }
+
+  header {
+    justify-content: space-between;
+    max-width: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "hamburger-menu logo user-menu"
+      "hamburger-menu searchbar user-menu";
+  }
+
+  .searchbar input {
+    max-width: 30vw;
+  }
+
+  .hamburger_container {
+    grid-area: hamburger-menu;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .user_menu {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+
+  .cart_img {
+    max-width: 3vw;
+  }
+
+  header .fp_logo {
+    margin-bottom: 0;
+    width: 39vw;
+  }
+
+  .account_img {
+    width: 15vw;
+  }
+  /* Hamburger menu */
+  .hamburger-label {
+    background-color: #0697f2;
+    display: block;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 50%;
+  }
+
+  .hamburger-label-line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display: block;
+    position: absolute;
+    background-color: #fff56d;
+    bottom: -143px;
+    left: 0px;
+  }
+
+  #hamburger-menu:checked ~ nav .menu_buttons {
+    flex-direction: column;
+  }
+
+  #hamburger-menu:checked ~ nav .menu_buttons li {
+    margin: 5px;
+  }
+
+  #hamburger-menu:checked ~ nav .menu_buttons a {
+    min-width: 100px;
+    font-size: 20px;
+  }
+
+  main {
+    margin: 10px;
+  }
+
+  .featured_games {
+    grid-template-columns: calc(50% - 12.5px) calc(50% - 12.5px);
+  }
+
+  .featured_games h2,
+  .featured_games a {
+    inline-size: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .product_game {
+    grid-template-columns: 1fr;
+  }
+
+  .product_game_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product_game img {
+    max-width: 50%;
+  }
+
+  .login_container {
+    flex-direction: column;
+  }
+  .login_information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .login_information input {
+    max-width: 40vw;
+  }
+}

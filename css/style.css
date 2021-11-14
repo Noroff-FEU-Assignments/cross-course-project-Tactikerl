@@ -1,0 +1,218 @@
+@import "imports/links.css";
+@import "imports/variables.css";
+
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url(../assets/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "Open sans", sans-serif;
+  src: url(../assets/OpenSans/OpenSans-Regular.ttf);
+}
+
+body {
+  background-color: #e1f0f9;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat";
+}
+
+.searchbar {
+}
+
+header {
+  background-color: #fff56d;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "logo searchbar user-menu"
+    "logo navbar user-menu";
+  position: relative;
+}
+
+/*nav & logo*/
+
+.hamburger-label {
+  display: none;
+}
+
+
+
+header .fp_logo {
+  flex: 1;
+  width: 25vw;
+  max-width: 300px;
+  margin-bottom: -30px;
+}
+
+.logo_container {
+  grid-area: logo;
+  align-self: end;
+  justify-self: center;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  grid-area: searchbar;
+  justify-self: center;
+  height: 70px;
+}
+
+.searchbar input,
+.searchbar button {
+  height: 50%;
+  padding
+}
+
+.topmenu {
+  grid-area: navbar;
+  align-self: end;
+  justify-self: center;
+}
+
+.user_menu {
+  grid-area: user-menu;
+  display: flex;
+  align-items: end;
+  gap: 5px;
+  padding: 5px;
+  justify-self: end;
+}
+
+
+.account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.account_img {
+  max-width: 100px;
+}
+
+.menu_button.small {
+  font-size: 13px;
+  width: 80px;
+}
+
+.menu_button.cart {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cart_img {
+  max-width: 30px;
+}
+
+/* main content*/
+
+.background_banner {
+  background-image: url(../images/homepage_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  min-height: 10vh;
+}
+
+main {
+  max-width: 100vh;
+  margin: auto;
+}
+
+.campaign_ad p {
+  margin: 10px;
+}
+
+.campaign_ad_img {
+  max-width: 100%;
+}
+
+.featured_games {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  
+  
+  border-bottom: 1px black solid;
+
+}
+
+.featured_games img {
+  max-width: 100%;
+}
+
+.featured_games_container {
+  background-color: white;
+  padding: 10px;
+  border: 1px black solid;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px 1px #000000;
+}
+
+.featured_games_container a,
+h2,
+p {
+  display: block;
+  padding: 5px;
+  margin: 0;
+}
+
+.featured_games_container .button_container {
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.featured_games_container .productpage_link_img {
+  padding: 0;
+}
+
+.checkout_container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  border: 1px black solid;
+  border-radius: 10px;  
+}
+
+.checkout_container h1, h3 {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px black solid;
+}
+
+.checkout_container .button_container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.payment_information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: black;
+  color: #e1f0f9;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+footer img {
+  max-width: 3vw;
+}
