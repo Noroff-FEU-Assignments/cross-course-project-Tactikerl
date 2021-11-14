@@ -10,7 +10,8 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/checkoutsuccess.css"
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/checkoutsuccess.css" />
   </head>
   <body>
     <script
@@ -18,11 +19,13 @@
       crossorigin="anonymous"
     ></script>
     <header>
-      <label class="hamburger-label" for="hamburger-menu">
-        <span class="hamburger-label-line"></span>
-        <span class="hamburger-label-line"></span>
-        <span class="hamburger-label-line"></span>
-      </label>
+      <div class="hamburger_container">
+        <label class="hamburger-label" for="hamburger-menu">
+          <span class="hamburger-label-line"></span>
+          <span class="hamburger-label-line"></span>
+          <span class="hamburger-label-line"></span>
+        </label>
+      </div>
       <input type="checkbox" id="hamburger-menu" />
       <div class="logo_container">
         <a href="index.html">
@@ -41,7 +44,7 @@
         <ul class="menu_buttons">
           <li><a href="index.html">HOME</a></li>
           <li><a href="gameslist.html">GAMES</a></li>
-          <li><a href="news.html">NEWS</a></li>
+
           <li><a href="contact.html">CONTACT</a></li>
         </ul>
       </nav>
@@ -55,11 +58,13 @@
           CART
         </a>
         <div class="account">
-          <img
-            src="images/profile_img.png"
-            alt="profile picture"
-            class="account_img"
-          />
+          <a href="account.html" class="account_img_link">
+            <img
+              src="images/profile_img.png"
+              alt="profile picture"
+              class="account_img"
+            />
+          </a>
           <a href="account.html" class="menu_button small">ACCOUNT</a>
           <a href="login.html" class="menu_button small">SIGN IN/UP</a>
         </div>

@@ -1,11 +1,10 @@
-@import "imports/links.css";
-@import "imports/variables.css";
-
 .product_game {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 25px;
   margin: 20px;
+  background-color: white;
+  border-radius: 10px;
 }
 
 .product_game img {
@@ -13,10 +12,9 @@
 }
 
 .product_game_container {
-  background-color: white;
   display: block;
   padding: 5px;
-  margin: 0;
+  margin: 10px;
 }
 
 .product_game_container a,
@@ -28,11 +26,12 @@ p {
 }
 
 .product_images {
-  max-width: 100vh;
+  max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  margin: 0px;
+  margin: 10px;
+  justify-items: center;
 }
 
 .product_game_container {

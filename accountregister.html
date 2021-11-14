@@ -9,7 +9,9 @@
       content="The hub for all things that are gaming."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/accountregister.css" rel="stylesheet" />
+    <link href="../css/media.css" rel="stylesheet" />
   </head>
   <body>
     <script
@@ -24,9 +26,9 @@
       </label>
       <input type="checkbox" id="hamburger-menu" />
       <div class="logo_container">
-        <a href="index.html">
+        <a href="../index.html">
           <img
-            src="images/GameHubLogout.png"
+            src="../images/GameHubLogout.png"
             alt="Game Hub logo"
             class="fp_logo"
           />
@@ -40,14 +42,14 @@
         <ul class="menu_buttons">
           <li><a href="index.html">HOME</a></li>
           <li><a href="gameslist.html">GAMES</a></li>
-          <li class="active"><a href="news.html">NEWS</a></li>
+
           <li><a href="contact.html">CONTACT</a></li>
         </ul>
       </nav>
       <div class="user_menu">
         <a href="checkout.html" class="menu_button small cart">
           <img
-            src="images/add_to_cart.png"
+            src="../images/add_to_cart.png"
             alt="image of shopping cart"
             class="cart_img"
           />
@@ -55,7 +57,7 @@
         </a>
         <div class="account">
           <img
-            src="images/profile_img.png"
+            src="../images/profile_img.png"
             alt="profile picture"
             class="account_img"
           />
@@ -65,7 +67,40 @@
       </div>
     </header>
     <div class="background_banner"></div>
-    <main></main>
+    <main>
+      <div class="information_container">
+        <h3>Register Account</h3>
+        <form class="payment_information">
+          <label for="fname">First name</label>
+          <input type="text" id="fname" name="fname" required />
+          <label for="lname">Last name</label>
+          <input type="text" id="lname" name="lname" required />
+          <label for="address1">Address</label>
+          <input type="text" id="address1" name="address1" required />
+          <label for="address2">Address</label>
+          <input type="text" id="address2" name="address2" />
+          <label for="zipcode">ZIP code</label>
+          <input type="text" id="zipcode" name="zipcode" required />
+          <label for="email">Email Address</label>
+          <input type="text" id="email" name="email" required />
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" required />
+          <label for="password">Choose Password</label>
+          <input type="password" id="password" name="password" required />
+          <label for="repeat_password">Repeat Password</label>
+          <input
+            type="password"
+            id="repeat_password"
+            name="repeat_password"
+            required
+          />
+        </form>
+        <div class="button_container">
+          <a href="index.html" class="cta cta-small">Cancel</a>
+          <a href="account.html" class="cta cta-small">Create Account</a>
+        </div>
+      </div>
+    </main>
     <footer>Copyright &copy;</footer>
   </body>
 </html>

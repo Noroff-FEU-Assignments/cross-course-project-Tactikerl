@@ -1,26 +1,145 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Game Hub</title>
+    <meta
+      name="description"
+      content="The hub for all things that are gaming."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/account.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
   </head>
   <body>
+    <script
+      src="https://kit.fontawesome.com/4946d189d8.js"
+      crossorigin="anonymous"
+    ></script>
     <header>
-      <nav>
-        <a href=""></a>
-        <ul>
-          <li>HOME</li>
-          <li>GAMES</li>
-          <li>NEWS</li>
-          <li>CONTACT</li>
-          <li>HELP</li>
+      <div class="hamburger_container">
+        <label class="hamburger-label" for="hamburger-menu">
+          <span class="hamburger-label-line"></span>
+          <span class="hamburger-label-line"></span>
+          <span class="hamburger-label-line"></span>
+        </label>
+      </div>
+      <input type="checkbox" id="hamburger-menu" />
+      <div class="logo_container">
+        <a href="../index.html">
+          <img
+            src="../images/GameHubLogout.png"
+            alt="Game Hub logo"
+            class="fp_logo"
+          />
+        </a>
+      </div>
+      <form class="searchbar">
+        <input type="text" placeholder="Search.." name="search" />
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
+      <nav class="topmenu">
+        <ul class="menu_buttons">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="gameslist.html">GAMES</a></li>
+
+          <li><a href="contact.html">CONTACT</a></li>
         </ul>
       </nav>
+      <div class="user_menu">
+        <a href="checkout.html" class="menu_button small cart">
+          <img
+            src="../images/add_to_cart.png"
+            alt="image of shopping cart"
+            class="cart_img"
+          />
+          CART
+        </a>
+        <div class="account">
+          <img
+            src="../images/profile_img.png"
+            alt="profile picture"
+            class="account_img"
+          />
+          <a href="account.html" class="menu_button small">ACCOUNT</a>
+          <a href="login.html" class="menu_button small">SIGN IN/UP</a>
+        </div>
+      </div>
     </header>
+    <div class="background_banner"></div>
+    <main>
+      <div class="information_container">
+        <h3 class="account_text">Your Account</h3>
+        <img
+          src="../images/profile_img.png"
+          alt="profile picture"
+          class="profile_img"
+        />
+        <form class="account_information">
+          <label for="fname">First name</label>
+          <input
+            type="text"
+            id="fname"
+            placeholder="Gamer"
+            name="fname"
+            required
+          />
+          <label for="lname">Last name</label>
+          <input
+            type="text"
+            id="lname"
+            placeholder="Gamerson"
+            name="lname"
+            required
+          />
+          <label for="address1">Address</label>
+          <input
+            type="text"
+            id="address1"
+            placeholder="Gamer Street 64"
+            name="address1"
+            required
+          />
+          <label for="address2">Address</label>
+          <input
+            type="text"
+            id="address2"
+            placeholder="Gamerville"
+            name="address2"
+          />
+          <label for="zipcode">ZIP code</label>
+          <input
+            type="text"
+            id="zipcode"
+            placeholder="9999"
+            name="zipcode"
+            required
+          />
+          <label for="email">Email Address</label>
+          <input
+            type="text"
+            id="email"
+            placeholder="gamer@gamemail.com"
+            name="email"
+            required
+          />
+          <label for="phone">Phone number</label>
+          <input
+            type="tel"
+            id="phone"
+            placeholder="123456789"
+            name="phone"
+            required
+          />
+        </form>
+        <div class="button_container">
+          <a href="index.html" class="cta cta-small">Edit Account</a>
+          <a href="account.html" class="cta cta-small">Delete Account</a>
+        </div>
+      </div>
+    </main>
+    <footer>Copyright &copy;</footer>
   </body>
 </html>

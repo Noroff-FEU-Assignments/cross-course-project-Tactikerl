@@ -1,2 +1,6 @@
-@import "imports/links.css";
-@import "imports/variables.css";
+.checkout_total {
+  text-decoration: underline;
+  display: flex;
+  padding: 10px;
+  justify-content: flex-start;
+}

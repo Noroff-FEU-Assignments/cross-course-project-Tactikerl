@@ -167,7 +167,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 25px;
-  margin: 10px;
+  
   
   border-bottom: 1px black solid;
 
@@ -198,6 +198,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .featured_games_container .productpage_link_img {
