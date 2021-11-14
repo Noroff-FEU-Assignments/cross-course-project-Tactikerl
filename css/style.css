@@ -241,3 +241,7 @@ footer {
   justify-content: center;
   margin-top: 20px;
 }
+
+footer img {
+  max-width: 3vw;
+}
