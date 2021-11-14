@@ -32,6 +32,7 @@ header .fp_logo {
   text-decoration: none;
   box-shadow: 0px 3px 6px 1px #000000;
   display: block;
+  width: 75px;
 }
 
 .menu_buttons .active {

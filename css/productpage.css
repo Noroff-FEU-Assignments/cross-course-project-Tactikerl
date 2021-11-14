@@ -26,13 +26,9 @@ p {
 }
 
 .product_images {
-  max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   margin: 10px;
   justify-items: center;
-}
-
-.product_game_container {
 }
