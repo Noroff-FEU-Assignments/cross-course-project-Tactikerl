@@ -113,30 +113,113 @@
         <h3 class="checkout_total">Total: $59.98</h3>
 
         <h3>Payment Information</h3>
-        <form class="payment_information">
-          <label for="fname">First name</label>
-          <input type="text" id="fname" name="fname" required />
-          <label for="lname">Last name</label>
-          <input type="text" id="lname" name="lname" required />
-          <label for="address1">Address</label>
-          <input type="text" id="address1" name="address1" required />
-          <label for="address2">Address</label>
-          <input type="text" id="address2" name="address2" />
-          <label for="zipcode">ZIP code</label>
-          <input type="text" id="zipcode" name="zipcode" required />
-          <label for="email">Email Address</label>
-          <input type="text" id="email" name="email" required />
-          <label for="phone">Phone number</label>
-          <input type="tel" id="phone" name="phone" required />
-          <label for="cardnumber">Card Number</label>
-          <input type="text" id="cardnumber" name="cardnumber" required />
-          <label for="cvc">CVC</label>
-          <input type="text" id="cvc" name="cvc" required />
+
+        <form id="checkoutForm" class="payment_information">
+          <div class="validationComplete"></div>
+          <div>
+            <label for="fname" class="form-input"
+              >First name<input
+                type="text"
+                id="firstName"
+                name="fname"
+                required
+            /></label>
+            <div class="form-error" id="nameError">
+              Please enter your first name.
+            </div>
+          </div>
+
+          <div>
+            <label for="lname" class="form-input"
+              >Last name<input type="text" id="lastName" name="lname" required
+            /></label>
+            <div class="form-error" id="nameError">
+              Please enter your last name.
+            </div>
+          </div>
+
+          <div>
+            <label for="address" class="form-input"
+              >Address<input type="text" id="address" name="address" required
+            /></label>
+            <div class="form-error" id="addressError">
+              Please enter a valid address.
+            </div>
+          </div>
+
+          <div>
+            <label for="city" class="form-input"
+              >City<input type="text" id="city" name="city"
+            /></label>
+            <div class="form-error" id="cityError">
+              Please input a valid city name.
+            </div>
+          </div>
+
+          <div>
+            <label for="zipcode" class="form-input"
+              >ZIP code<input
+                type="number"
+                id="zipCode"
+                name="zipCode"
+                required
+            /></label>
+            <div class="form-error" id="zipCodeError">
+              Please enter a valid zipcode, 4 digits or more.
+            </div>
+          </div>
+
+          <div>
+            <label for="email" class="form-input"
+              >Email Address<input type="text" id="email" name="email" required
+            /></label>
+            <div class="form-error" id="emailError">
+              Please enter a valid Email Address.
+            </div>
+          </div>
+
+          <div>
+            <label for="phone" class="form-input"
+              >Phone number<input type="tel" id="phone" name="phone" required
+            /></label>
+            <div class="form-error" id="phoneNumberError">
+              Please enter a valid phone number, remember to add country code.
+            </div>
+          </div>
+
+          <div>
+            <label for="cardnumber" class="form-input"
+              >Card Number<input
+                type="number"
+                id="cardNumber"
+                name="cardnumber"
+                required
+            /></label>
+            <div class="form-error" id="cardError">
+              Please enter a valid Card number, 16 digits.
+            </div>
+          </div>
+
+          <div>
+            <label for="cvc" class="form-input"
+              >CVC<input
+                type="number"
+                max="999"
+                pattern="([0-9]|[0-9]|[0-9])"
+                id="cvc"
+                name="cvc"
+            /></label>
+            <div class="form-error" id="cvcError">
+              Please enter the correct CVC number
+            </div>
+          </div>
+          <div class="button_container">
+            <button class="menu_button small">
+              <a href="index.html">Cancel</a>
+            </button>
+            <button class="menu_button small">Confirm</button>
+          </div>
         </form>
-        <div class="button_container">
-          <a href="index.html" class="menu_button small">Cancel</a>
-          <a href="checkoutsuccess.html" class="menu_button small">Confirm</a>
-        </div>
       </div>
     </main>
     <footer>
@@ -146,5 +229,6 @@
       <img src="images/Twit.png" />
       <img src="images/Inst.png" />
     </footer>
+    <script src="js/checkout.js"></script>
   </body>
 </html>

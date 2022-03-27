@@ -84,29 +84,96 @@
       <div class="information_container">
         <h3>Register Account</h3>
         <form class="payment_information">
-          <label for="fname">First name</label>
-          <input type="text" id="fname" name="fname" required />
-          <label for="lname">Last name</label>
-          <input type="text" id="lname" name="lname" required />
-          <label for="address1">Address</label>
-          <input type="text" id="address1" name="address1" required />
-          <label for="address2">Address</label>
-          <input type="text" id="address2" name="address2" />
-          <label for="zipcode">ZIP code</label>
-          <input type="text" id="zipcode" name="zipcode" required />
-          <label for="email">Email Address</label>
-          <input type="text" id="email" name="email" required />
-          <label for="phone">Phone number</label>
-          <input type="tel" id="phone" name="phone" required />
-          <label for="password">Choose Password</label>
-          <input type="password" id="password" name="password" required />
-          <label for="repeat_password">Repeat Password</label>
-          <input
-            type="password"
-            id="repeat_password"
-            name="repeat_password"
-            required
-          />
+          <div>
+            <label for="fname"
+              >First name<input type="text" id="fname" name="fname" required
+            /></label>
+            <div class="form-error" id="nameError">
+              Please fill out the requested field.
+            </div>
+          </div>
+
+          <div>
+            <label for="lname"
+              >Last name<input type="text" id="lname" name="lname" required
+            /></label>
+            <div class="form-error" id="nameError">
+              Please fill out the requested field.
+            </div>
+          </div>
+
+          <div>
+            <label for="address1"
+              >Address<input type="text" id="address1" name="address1" required
+            /></label>
+            <div class="form-error" id="addressError">
+              Address must be valid.
+            </div>
+          </div>
+
+          <div>
+            <label for="address2"
+              >Address<input type="text" id="address2" name="address2"
+            /></label>
+            <div class="form-error" id="address2Error">
+              Address must be valid.
+            </div>
+          </div>
+
+          <div>
+            <label for="zipcode"
+              >ZIP code<input type="text" id="zipcode" name="zipcode" required
+            /></label>
+            <div class="form-error" id="zipError">
+              ZIP code is invalid, please enter a valid code.
+            </div>
+          </div>
+
+          <div>
+            <label for="email"
+              >Email Address<input type="text" id="email" name="email" required
+            /></label>
+            <div class="form-error" id="emailError">
+              Please enter a valid Email address.
+            </div>
+          </div>
+
+          <div>
+            <label for="phone"
+              >Phone number<input type="tel" id="phone" name="phone" required
+            /></label>
+            <div class="form-error" id="phoneError">
+              Please enter a valid phone number.
+            </div>
+          </div>
+
+          <div>
+            <label for="password"
+              >Choose Password<input
+                type="password"
+                id="password"
+                name="password"
+                required
+            /></label>
+            <div class="form-error" id="passwordError">
+              Password must be at least 8 characters and must contain at least
+              one special character.
+            </div>
+          </div>
+
+          <div>
+            <label for="repeat_password"
+              >Repeat Password<input
+                type="password"
+                id="repeat_password"
+                name="repeat_password"
+                required
+            /></label>
+            <div class="form-error" id="repeatPasswordError">
+              Passwords are not identical, please check that you have inputed
+              the correct password.
+            </div>
+          </div>
         </form>
         <div class="button_container">
           <a href="index.html" class="cta cta-small">Cancel</a>
@@ -121,5 +188,6 @@
       <img src="images/Twit.png" />
       <img src="images/Inst.png" />
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
