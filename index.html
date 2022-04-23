@@ -12,22 +12,6 @@
     <link rel="stylesheet" href="css/style.css" />
     <link href="css/media.css" rel="stylesheet" />
     <link href="css/index.css" rel="stylesheet" />
-    <!-- Hotjar Tracking Code for https://gamehub-kmk.netlify.app/ -->
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 2862753, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
   </head>
   <body>
     <script
@@ -91,104 +75,23 @@
         <div>
           <h1>Retro Week</h1>
 
+          <p>
+            Welcome to Game Hub! Here you will eventually find full categories
+            of games from the early days of gaming and the newest releases for
+            the current consoles and PC. In the meantime as we fill the shelves
+            with retro goodies you can check out our selection of tripple A
+            games <a href="gameslist.html">here</a>, or by using the link in the
+            navigation bar at the top of the website. Enjoy the games!
+          </p>
           <img
             src="images/homepage_rw_copy.jpg"
             alt="image of retro consoles"
             class="campaign_ad_img"
           />
-
-          <p>
-            Check out our selection of retro games
-            <a href="gameslist.html">here!</a>
-          </p>
+          <p>Check out our featured games!</p>
         </div>
       </section>
-      <section class="featured_games">
-        <div class="featured_games_container">
-          <a href="product/productpage.html" class="productpage_link_img">
-            <img
-              src="images/productimages/GameHub_Super.jpg"
-              alt="Cover art for Super Duper"
-            />
-          </a>
-          <h2>Super Duper</h2>
-          <p>$29.99</p>
-          <div class="button_container">
-            <a href="product/productpage.html" class="cta cta-small">View</a>
-            <a href="cart.html" class="cta cta-small">Add to Cart</a>
-          </div>
-        </div>
-        <div class="featured_games_container">
-          <a href="product/productpage.html" class="productpage_link_img">
-            <img
-              src="images/productimages/GameHub_Assassin.jpg"
-              alt="Cover art for Assassin"
-            />
-          </a>
-          <h2>Assassin</h2>
-          <p>$29.99</p>
-          <div class="button_container">
-            <a href="product/productpage.html" class="cta cta-small">View</a>
-            <a href="cart.html" class="cta cta-small">Add to Cart</a>
-          </div>
-        </div>
-        <div class="featured_games_container">
-          <a href="product/productpage.html" class="productpage_link_img">
-            <img
-              src="images/productimages/GameHub_Black.jpg"
-              alt="Cover art for Black"
-            />
-          </a>
-          <h2>Black</h2>
-          <p>$29.99</p>
-          <div class="button_container">
-            <a href="product/productpage.html" class="cta cta-small">View</a>
-            <a href="cart.html" class="cta cta-small">Add to Cart</a>
-          </div>
-        </div>
-        <div class="featured_games_container">
-          <a href="product/productpage.html" class="productpage_link_img">
-            <img
-              src="images/productimages/GameHub_Boxer.jpg"
-              alt="Cover art for Boxer"
-            />
-          </a>
-          <h2>Boxer</h2>
-          <p>$29.99</p>
-          <div class="button_container">
-            <a href="product/productpage.html" class="cta cta-small">View</a>
-            <a href="cart.html" class="cta cta-small">Add to Cart</a>
-          </div>
-        </div>
-        <div class="featured_games_container">
-          <a href="product/productpage.html" class="productpage_link_img">
-            <img
-              src="images/productimages/GameHub_Cyberpunk.jpg"
-              alt="Cover art for Cyberpunk"
-            />
-          </a>
-          <h2>Cyberpunk</h2>
-          <p>$29.99</p>
-          <div class="button_container">
-            <a href="product/productpage.html" class="cta cta-small">View</a>
-            <a href="cart.html" class="cta cta-small">Add to Cart</a>
-          </div>
-        </div>
-        <div class="featured_games_container">
-          <a href="product/productpage.html" class="productpage_link_img">
-            <img
-              src="images/productimages/GameHub_ForgeLegend.jpg"
-              alt="Cover art fort Forge Legend"
-            />
-          </a>
-          <h2>Forge Legend</h2>
-          <p>$29.99</p>
-          <div class="button_container">
-            <a href="product/productpage.html" class="cta cta-small">View</a>
-            <a href="cart.html" class="cta cta-small">Add to Cart</a>
-          </div>
-        </div>
-      </section>
+      <section class="featured_games"></section>
     </main>
     <footer>
       Copyright &copy;
@@ -197,5 +100,6 @@
       <img src="images/Twit.png" />
       <img src="images/Inst.png" />
     </footer>
+    <script src="js/featured.js" type="module"></script>
   </body>
 </html>

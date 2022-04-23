@@ -1,7 +1,9 @@
 .product_game {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
+  justify-items: center;
   gap: 25px;
+  padding: 10px;
   margin: 20px;
   background-color: white;
   border-radius: 10px;
